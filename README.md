@@ -41,8 +41,8 @@ jsonata-cli <query-expression> -f [--file] <JSON-file>
 ```
 
 Where:
-- <query-expression> - represent the JSONata location path syntax similar to XPath
-- <JSON-file> - a file in JSON format
+- `query-expression` - represent the JSONata location path syntax similar to XPath
+- `JSON-file` - a file in JSON format
 
 For the syntax of a query expression consult the [JSONata Documentation](http://docs.jsonata.org/overview).
 
@@ -65,8 +65,8 @@ JSON string can be performed:
 jsonata-cli <query-expression> <JSON-string>
 ```
 
-- <query-expression> - represent the JSONata location path syntax similar to XPath
-- <JSON-string> - a string in JSON format
+- `query-expression` - represent the JSONata location path syntax similar to XPath
+- `JSON-string` - a string in JSON format
 
 **Examples:**
 
