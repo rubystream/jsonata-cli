@@ -1,6 +1,6 @@
 {
   "name": "jsonata-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI JSON query tool based on JSONata",
   "main": "src/index.js",
   "bin": {

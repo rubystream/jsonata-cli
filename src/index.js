@@ -1,4 +1,7 @@
-const packageJson = require('../package.json')
+#! /usr/bin/env node
+
+const path = require('path')
+const packageJson = require(path.resolve(__dirname, '../package.json'))
 const jsonata = require('jsonata')
 const minimist = require('minimist')
 const fs = require('fs/promises')

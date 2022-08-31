@@ -1,5 +1,5 @@
 const path = require('path')
-const main = require('../src/index')
+const main = require(path.resolve(__dirname, '../src/index'))
 
 const FIXTURE_JSON = JSON.stringify({ name: 'test', description: 'fake data' })
 const FIXTURE_PATTERN = 'name'
@@ -7,12 +7,12 @@ const FIXTURE_PATTERN = 'name'
 describe('main pplication', function () {
   it('should display version', function () {
     const version = main.getVersion()
-    expect(version).toBe('1.0.0')
+    expect(version).toBe('1.0.2')
   })
 
   it('should return usage text', function () {
     const msg = main.getUsage()
-    expect(msg).toHaveSize(120)
+    expect(msg).toHaveSize(238)
   })
 
   it('should parse JSON file', async function () {
