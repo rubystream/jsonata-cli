@@ -1,0 +1,42 @@
+{
+  "name": "jsonata-cli",
+  "version": "1.0.0",
+  "description": "CLI JSON query tool based on JSONata",
+  "main": "src/index.js",
+  "bin": {
+    "jsonata-cli": "src/index.js"
+  },
+  "scripts": {
+    "lint": "eslint --ext 'js' .",
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubystream/jsonata-cli.git"
+  },
+  "keywords": [
+    "json",
+    "query",
+    "jsonata",
+    "cli"
+  ],
+  "author": "Dejan Dimic <dejan.dimic@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rubystream/jsonata-cli/issues"
+  },
+  "homepage": "https://github.com/rubystream/jsonata-cli#readme",
+  "dependencies": {
+    "jsonata": "^1.8.6",
+    "minimist": "^1.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jasmine": "^4.1.3",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-promise": "^6.0.1",
+    "jasmine": "^4.3.0"
+  }
+}
