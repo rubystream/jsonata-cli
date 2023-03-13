@@ -56,7 +56,7 @@ const isFile = async (fileName) => {
   }
 }
 
-const parseInput = (str) => {
+const parseInput = async (str) => {
   return JSON.parse(str)
 }
 
@@ -72,9 +72,9 @@ const showError = (msg) => {
   console.error(msg)
 }
 
-const runJsonata = (pattern, str) => {
+const runJsonata = async (pattern, str) => {
   const expression = jsonata(pattern)
-  return expression.evaluate(str)
+  return await expression.evaluate(str)
 }
 
 const main = async () => {
@@ -88,12 +88,12 @@ const main = async () => {
       showUsage()
     } else if (opts.file && opts._.length > 0) {
       if (await isFile(opts.file)) {
-        showResult(runJsonata(opts._[0], await parseFile(opts.file)))
+        showResult(await runJsonata(opts._[0], await parseFile(opts.file)))
       } else {
         showUsage()
       }
     } else if (opts._.length > 1) {
-      showResult(runJsonata(opts._[0], parseInput(opts._[1])))
+      showResult(await runJsonata(opts._[0], parseInput(opts._[1])))
     } else {
       showUsage()
     }
