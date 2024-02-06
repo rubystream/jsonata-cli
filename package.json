@@ -1,6 +1,6 @@
 {
   "name": "jsonata-cli",
-  "version": "2.0.0",
+  "version": "2.0.3",
   "description": "CLI JSON query tool based on JSONata",
   "main": "src/index.js",
   "bin": {
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/rubystream/jsonata-cli#readme",
   "dependencies": {
-    "jsonata": "^2.0.2",
+    "jsonata": "^2.0.3",
     "minimist": "^1.2.8"
   },
   "devDependencies": {
@@ -35,8 +35,8 @@
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jasmine": "^4.1.3",
-    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.1.1",
-    "jasmine": "^4.5.0"
+    "jasmine": "^5.1.0"
   }
 }
