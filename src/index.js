@@ -93,7 +93,8 @@ const main = async () => {
         showUsage()
       }
     } else if (opts._.length > 1) {
-      showResult(await runJsonata(opts._[0], parseInput(opts._[1])))
+      console.log(opts._[0], parseInput(opts._[1]))
+      showResult(await runJsonata(opts._[0], await parseInput(opts._[1])))
     } else {
       showUsage()
     }

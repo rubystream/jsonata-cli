@@ -41,6 +41,7 @@ jsonata-cli <query-expression> -f [--file] <JSON-file>
 ```
 
 Where:
+
 - `query-expression` - represent the JSONata location path syntax similar to XPath
 - `JSON-file` - a file in JSON format
 
@@ -53,7 +54,7 @@ For the syntax of a query expression consult the [JSONata Documentation](http://
 jsonata-cli 'scripts' -f package.json
 
 # count the number of dependencies
-jsonata-cli '$sum($keys(dependencies))' -f package.json
+jsonata-cli '$count($keys(dependencies))' -f package.json
 ```
 
 #### Query JSON string

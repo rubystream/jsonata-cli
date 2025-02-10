@@ -7,7 +7,7 @@ const FIXTURE_PATTERN = 'name'
 describe('main pplication', function () {
   it('should display version', function () {
     const version = main.getVersion()
-    expect(version).toBe('2.0.3')
+    expect(version).toBe('2.0.6')
   })
 
   it('should return usage text', function () {
